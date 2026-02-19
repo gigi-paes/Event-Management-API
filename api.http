@@ -1,0 +1,32 @@
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+    "name": "Úsuario Indicado2",
+    "email": "yoshifedidao456@gmail.com",
+    "referrer": "9ffa52f9-d999-4ab4-a6e0-e295ee84aac2"
+}
+
+###
+GET http://localhost:3333/invites/9ffa52f9-d999-4ab4-a6e0-e295ee84aac2
+
+### 
+GET http://localhost:3333/subscribers/9ffa52f9-d999-4ab4-a6e0-e295ee84aac2/ranking/clicks
+
+###
+GET http://localhost:3333/subscribers/9ffa52f9-d999-4ab4-a6e0-e295ee84aac2/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/9ffa52f9-d999-4ab4-a6e0-e295ee84aac2/ranking/position
+###
+
+GET http://localhost:3333/ranking
+
+###
+POST http://localhost:3333/messages
+Content-Type: application/json
+
+{
+    "message": "Quais os e-mails dos usuários cadastrados em minha aplicação?"
+}
